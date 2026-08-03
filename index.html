@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MilPlantas | Flores Naturais, Jardinagem & Paisagismo na Vila Leopoldina SP</title>
+  <meta name="description" content="A MilPlantas é referência há mais de 33 anos no comércio de flores naturais, plantas ornamentais, decoração e arranjos sob medida para mini weddings e eventos em São Paulo.">
+  <meta name="keywords" content="MilPlantas, floricultura Vila Leopoldina, flores de corte SP, plantas em vaso, mini weddings, arranjos de noivado, artigos de jardinagem São Paulo">
+  <meta name="author" content="MilPlantas">
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon Oficial -->
+  <link rel="icon" type="image/webp" href="Favicon Mil Plantas.webp">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://milplantas.com.br/">
+  <meta property="og:title" content="MilPlantas | Flores Naturais & Paisagismo na Vila Leopoldina SP">
+  <meta property="og:description" content="Mais de 33 anos unindo natureza, beleza e sofisticação. Flores de corte, plantas em vaso, decoração e projetos florais para casamentos e eventos corporativos.">
+  <meta property="og:image" content="assets/images/real_bouquet_box.png">
+
+  <!-- Fonts: Urbanist, Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Schema JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "MilPlantas",
+    "image": "https://milplantas.com.br/assets/images/real_bouquet_box.png",
+    "@id": "https://milplantas.com.br/#organization",
+    "url": "https://milplantas.com.br",
+    "telephone": "+5511940158039",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Baumann, 1177",
+      "addressLocality": "São Paulo",
+      "addressRegion": "SP",
+      "postalCode": "05318-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.5276,
+      "longitude": -46.7328
+    },
+    "sameAs": [
+      "https://www.instagram.com/milplantas/"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-noise">
+
+  <!-- Ambient Light Orbs -->
+  <div class="bg-blur-orb orb-1"></div>
+  <div class="bg-blur-orb orb-2"></div>
+
+  <!-- Header Navigation -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#" class="logo" title="MilPlantas São Paulo">
+        <img src="Logo Milplantas.svg" alt="MilPlantas" class="brand-logo-img">
+      </a>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar Tema Claro/Escuro" title="Alternar Modo">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ACT 1: HERO SECTION COM FORMULÁRIO VERDE -->
+    <section class="hero-section bg-grid-pattern" id="hero">
+      <div class="container hero-split-grid">
+        <!-- Hero Text Left Side -->
+        <div class="hero-content-left reveal-item">
+          <div class="inline-badge font-mono">
+            <span class="badge-dot"></span>
+            <span>MAIS DE 33 ANOS DE TRADIÇÃO EM SÃO PAULO</span>
+          </div>
+
+          <h1 class="hero-display-title">
+            Natureza, beleza e sofisticação<br>
+            <span class="text-muted-display">para transformar seus ambientes.</span>
+          </h1>
+
+          <p class="hero-lead-text">
+            Plantas ornamentais em vaso, folhagens exuberantes, flores de corte frescas, artigos de decoração, jardinagem e projetos florais sob medida na Vila Leopoldina.
+          </p>
+
+          <div class="hero-info-pills font-mono">
+            <div class="info-pill"><i data-lucide="map-pin"></i> Rua Baumann, 1177 – SP</div>
+            <div class="info-pill"><i data-lucide="clock"></i> Seg a Sáb: 08h às 18h</div>
+          </div>
+        </div>
+
+        <!-- Hero Form Right Side (Formulário Principal) -->
+        <div class="hero-form-wrapper reveal-item">
+          <div class="lead-form-card spotlight-card glass-card" id="formCard">
+            <h2 class="form-title">
+              Preencha o formulário <span class="form-title-sub">e deixe-nos ajudar a criar o ambiente dos seus sonhos.</span>
+            </h2>
+
+            <form id="heroWhatsappForm" class="lead-form">
+              <div class="form-group">
+                <input type="text" id="leadName" class="form-input" placeholder="Nome" required>
+              </div>
+
+              <div class="form-group">
+                <input type="tel" id="leadPhone" class="form-input" placeholder="Telefone" required>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="leadEmail" class="form-input" placeholder="E-mail" required>
+              </div>
+
+              <div class="form-radio-section">
+                <label class="radio-section-label font-mono">O que você está procurando?*</label>
+                
+                <div class="radio-options-list">
+                  <label class="radio-item">
+                    <input type="radio" name="leadInterest" value="Flores e Plantas" checked>
+                    <span class="radio-custom"></span>
+                    <span>Flores e Plantas</span>
+                  </label>
+
+                  <label class="radio-item">
+                    <input type="radio" name="leadInterest" value="Projetos personalizados">
+                    <span class="radio-custom"></span>
+                    <span>Projetos personalizados</span>
+                  </label>
+
+                  <label class="radio-item">
+                    <input type="radio" name="leadInterest" value="Acessórios e elementos de decoração">
+                    <span class="radio-custom"></span>
+                    <span>Acessórios e elementos de decoração</span>
+                  </label>
+
+                  <label class="radio-item">
+                    <input type="radio" name="leadInterest" value="Outros">
+                    <span class="radio-custom"></span>
+                    <span>Outros</span>
+                  </label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-emerald btn-lg w-100 font-mono form-submit-btn">
+                <span>Solicite um orçamento</span>
+                <svg class="official-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/>
+                  <path d="M12 0C5.373 0 0 5.373 0 12c0 2.119.554 4.108 1.523 5.835L.055 23.445l5.772-1.514C7.502 22.84 9.687 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.99 0-3.856-.566-5.447-1.547l-.391-.24-3.432.9.916-3.346-.264-.42A9.957 9.957 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACT 2: CARROSSEL INFINITO DE IMAGENS REAIS DA PASTA IMAGENS -->
+    <section class="section border-y" style="padding: 2.5rem 0; overflow: hidden; background: var(--bg-surface);">
+      <div class="container text-center mb-6">
+        <span class="section-tag font-mono">GALERIA AMBIENTES & ARRANJOS</span>
+        <h2 class="section-title" style="font-size: 2rem;">Espaço MilPlantas em Detalhes</h2>
+      </div>
+
+      <div class="pb-marquee-container" id="carrossel">
+        <div class="pb-marquee-fade-left"></div>
+        
+        <div class="pb-marquee-track animate-pb-marquee carrossel-track">
+          <!-- Todas as 20 fotos reais da pasta imagens -->
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 1.png" alt="MilPlantas 1" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 2.png" alt="MilPlantas 2" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 3.png" alt="MilPlantas 3" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 4.png" alt="MilPlantas 4" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 5.png" alt="MilPlantas 5" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 6.png" alt="MilPlantas 6" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 7.png" alt="MilPlantas 7" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 8.png" alt="MilPlantas 8" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 9.png" alt="MilPlantas 9" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 10.png" alt="MilPlantas 10" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 11.png" alt="MilPlantas 11" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 12.png" alt="MilPlantas 12" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 13.png" alt="MilPlantas 13" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 14.png" alt="MilPlantas 14" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 15.png" alt="MilPlantas 15" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 16.png" alt="MilPlantas 16" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 17.png" alt="MilPlantas 17" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 18.png" alt="MilPlantas 18" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas - 19.png" alt="MilPlantas 19" loading="lazy"></div>
+          <div class="marquee-photo-card"><img src="imagens/mil plantas.png" alt="MilPlantas 20" loading="lazy"></div>
+
+          <!-- Duplicados para Loop 100% Contínuo sem Pulos -->
+          <div class="marquee-photo-card" aria-hidden="true"><img src="imagens/mil plantas - 1.png" alt="" loading="lazy"></div>
+          <div class="marquee-photo-card" aria-hidden="true"><img src="imagens/mil plantas - 2.png" alt="" loading="lazy"></div>
+          <div class="marquee-photo-card" aria-hidden="true"><img src="imagens/mil plantas - 3.png" alt="" loading="lazy"></div>
+          <div class="marquee-photo-card" aria-hidden="true"><img src="imagens/mil plantas - 4.png" alt="" loading="lazy"></div>
+          <div class="marquee-photo-card" aria-hidden="true"><img src="imagens/mil plantas - 5.png" alt="" loading="lazy"></div>
+          <div class="marquee-photo-card" aria-hidden="true"><img src="imagens/mil plantas - 6.png" alt="" loading="lazy"></div>
+          <div class="marquee-photo-card" aria-hidden="true"><img src="imagens/mil plantas - 7.png" alt="" loading="lazy"></div>
+          <div class="marquee-photo-card" aria-hidden="true"><img src="imagens/mil plantas - 8.png" alt="" loading="lazy"></div>
+          <div class="marquee-photo-card" aria-hidden="true"><img src="imagens/mil plantas - 9.png" alt="" loading="lazy"></div>
+          <div class="marquee-photo-card" aria-hidden="true"><img src="imagens/mil plantas - 10.png" alt="" loading="lazy"></div>
+        </div>
+
+        <div class="pb-marquee-fade-right"></div>
+      </div>
+    </section>
+
+    <!-- ACT 3: HISTÓRIA & SOBRE A MILPLANTAS -->
+    <section class="section manifesto-section" id="historia">
+      <div class="container max-w-3xl text-center">
+        <div class="reveal-item">
+          <span class="section-tag font-mono">NOSSA HISTÓRIA</span>
+          <h2 class="manifesto-title">
+            Tradição e paixão pela botânica<br>
+            <span class="highlight-text">há mais de 33 anos.</span>
+          </h2>
+          <p class="manifesto-text">
+            A <strong>MilPlantas</strong> é uma empresa brasileira com mais de 33 anos de experiência no comércio de flores naturais, plantas ornamentais, artigos de decoração e jardinagem. Localizada na <strong>Rua Baumann, 1177 – Vila Leopoldina, São Paulo</strong>, oferece uma grande variedade de plantas em vaso, folhagens, flores de corte, acessórios e arranjos personalizados. Também realiza projetos florais sob medida para noivados, mini weddings, aniversários e eventos corporativos. Referência no setor, a MilPlantas une natureza, beleza e sofisticação para transformar ambientes com atendimento especializado e soluções criativas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACT 4: INFINITE MARQUEE DEPOIMENTOS (Product Builders Style) -->
+    <section class="section pb-testimonials-section border-t" id="depoimentos">
+      <div class="container text-center mb-8">
+        <div class="google-rating-badge font-mono">
+          <svg class="google-g-icon" viewBox="0 0 24 24" width="18" height="18">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.62z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+          </svg>
+          <span>Avaliações Reais do Google Maps</span>
+          <div class="stars-gold">★★★★★ 4.9 / 5.0</div>
+        </div>
+      </div>
+
+      <div class="pb-marquee-container">
+        <div class="pb-marquee-fade-left"></div>
+        
+        <div class="pb-marquee-track animate-pb-marquee">
+          <!-- Card 1 -->
+          <div class="pb-testimonial-card spotlight-card glass-card">
+            <div class="pb-user-row">
+              <div class="pb-avatar-circle dark"><i data-lucide="user"></i></div>
+              <div>
+                <div class="pb-user-name">Juliana Camargo</div>
+                <div class="pb-user-role font-mono">Vila Leopoldina SP</div>
+              </div>
+            </div>
+            <p class="pb-quote-text font-normal">
+              “Espaço incrível na Rua Baumann! Comprei os arranjos do meu noivado e a qualidade das flores vindas de Holambra superou tudo.”
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="pb-testimonial-card spotlight-card glass-card">
+            <div class="pb-user-row">
+              <div class="pb-avatar-circle light"><i data-lucide="user"></i></div>
+              <div>
+                <div class="pb-user-name">Marcelo Rossi</div>
+                <div class="pb-user-role font-mono">Arquiteto & Paisagista</div>
+              </div>
+            </div>
+            <p class="pb-quote-text font-normal">
+              “Frequento a MilPlantas há anos para especificar vasos e plantas para meus projetos de interiores em SP. Atendimento técnico nota 1000!”
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="pb-testimonial-card spotlight-card glass-card">
+            <div class="pb-user-row">
+              <div class="pb-avatar-circle dark"><i data-lucide="user"></i></div>
+              <div>
+                <div class="pb-user-name">Beatriz & Fernando</div>
+                <div class="pb-user-role font-mono">Mini Wedding SP</div>
+              </div>
+            </div>
+            <p class="pb-quote-text font-normal">
+              “Fizeram a decoração floral do nosso mini wedding. Cada detalhe, buquê e arranjo de mesa de flores naturais ficou simplesmente perfeito.”
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="pb-testimonial-card spotlight-card glass-card">
+            <div class="pb-user-row">
+              <div class="pb-avatar-circle light"><i data-lucide="user"></i></div>
+              <div>
+                <div class="pb-user-name">Claudia Silveira</div>
+                <div class="pb-user-role font-mono">Moradora de Pinheiros</div>
+              </div>
+            </div>
+            <p class="pb-quote-text font-normal">
+              “Ajudaram a escolher a planta ideal para a luz da minha sala. Minha Ficus Lyrata está linda e supersaudável.”
+            </p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="pb-testimonial-card spotlight-card glass-card">
+            <div class="pb-user-row">
+              <div class="pb-avatar-circle dark"><i data-lucide="user"></i></div>
+              <div>
+                <div class="pb-user-name">Eduardo Nogueira</div>
+                <div class="pb-user-role font-mono">Diretor de Eventos</div>
+              </div>
+            </div>
+            <p class="pb-quote-text font-normal">
+              “Contratamos a ambientação verde para a convenção da nossa empresa. Agilidade total do orçamento à montagem final!”
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="pb-testimonial-card spotlight-card glass-card">
+            <div class="pb-user-row">
+              <div class="pb-avatar-circle light"><i data-lucide="user"></i></div>
+              <div>
+                <div class="pb-user-name">Fernanda Almeida</div>
+                <div class="pb-user-role font-mono">Cliente Frequente</div>
+              </div>
+            </div>
+            <p class="pb-quote-text font-normal">
+              “Melhor lugar de São Paulo para comprar plantas ornamentais e vasos artesanais de cerâmica. Recomendo demais!”
+            </p>
+          </div>
+
+          <!-- Duplicados para Loop 100% Contínuo -->
+          <div class="pb-testimonial-card spotlight-card glass-card" aria-hidden="true">
+            <div class="pb-user-row">
+              <div class="pb-avatar-circle dark"><i data-lucide="user"></i></div>
+              <div>
+                <div class="pb-user-name">Juliana Camargo</div>
+                <div class="pb-user-role font-mono">Vila Leopoldina SP</div>
+              </div>
+            </div>
+            <p class="pb-quote-text font-normal">
+              “Espaço incrível na Rua Baumann! Comprei os arranjos do meu noivado e a qualidade das flores vindas de Holambra superou tudo.”
+            </p>
+          </div>
+
+          <div class="pb-testimonial-card spotlight-card glass-card" aria-hidden="true">
+            <div class="pb-user-row">
+              <div class="pb-avatar-circle light"><i data-lucide="user"></i></div>
+              <div>
+                <div class="pb-user-name">Marcelo Rossi</div>
+                <div class="pb-user-role font-mono">Arquiteto & Paisagista</div>
+              </div>
+            </div>
+            <p class="pb-quote-text font-normal">
+              “Frequento a MilPlantas há anos para especificar vasos e plantas para meus projetos de interiores em SP. Atendimento técnico nota 1000!”
+            </p>
+          </div>
+
+          <div class="pb-testimonial-card spotlight-card glass-card" aria-hidden="true">
+            <div class="pb-user-row">
+              <div class="pb-avatar-circle dark"><i data-lucide="user"></i></div>
+              <div>
+                <div class="pb-user-name">Beatriz & Fernando</div>
+                <div class="pb-user-role font-mono">Mini Wedding SP</div>
+              </div>
+            </div>
+            <p class="pb-quote-text font-normal">
+              “Fizeram a decoração floral do nosso mini wedding. Cada detalhe, buquê e arranjo de mesa de flores naturais ficou simplesmente perfeito.”
+            </p>
+          </div>
+        </div>
+
+        <div class="pb-marquee-fade-right"></div>
+      </div>
+
+      <div class="text-center mt-4 reveal-item" style="margin-top: 2.5rem;">
+        <a href="https://www.google.com/maps/place/MilPlantas/data=!4m2!3m1!1s0x0:0xb5fc442530e3da10?sa=X&ved=1t:2428&ictx=111" target="_blank" class="btn btn-outline font-mono">
+          <svg class="google-g-icon" viewBox="0 0 24 24" width="16" height="16" style="margin-right: 0.4rem;">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.1c-.22-.66-.35-1.36-.35-2.1s.13-1.44.35-2.1V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.62z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+          </svg>
+          Ver Todas as Avaliações no Google Maps <i data-lucide="external-link"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ACT 5: PROJETOS FLORAIS & EVENTOS -->
+    <section class="section events-section border-t" id="eventos">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag font-mono">PROJETOS ESPECIAIS</span>
+          <h2 class="section-title">Decoração Floral para Ocasiões Inesquecíveis</h2>
+          <p class="section-subtitle">Desenvolvemos arranjos e ambientação sob medida para celebrar momentos marcantes com elegância.</p>
+        </div>
+
+        <div class="services-grid reveal-item">
+          <div class="service-card spotlight-card glass-card">
+            <div class="service-icon"><i data-lucide="heart"></i></div>
+            <h3>Noivados & Mini Weddings</h3>
+            <p>Design floral delicado e romântico para cerimônias intimistas. Arranjos de mesa, buquês e arcos de flores naturais.</p>
+            <button onclick="scrollToForm('Projetos personalizados')" class="btn btn-emerald font-mono w-100 mt-4">
+              <span>Solicitar orçamento</span>
+            </button>
+          </div>
+
+          <div class="service-card spotlight-card glass-card">
+            <div class="service-icon"><i data-lucide="building-2"></i></div>
+            <h3>Eventos Corporativos</h3>
+            <p>Ambientação verde e arranjos florais corporativos para convenções, jantares de gala e recepções institucionais.</p>
+            <button onclick="scrollToForm('Projetos personalizados')" class="btn btn-emerald font-mono w-100 mt-4">
+              <span>Solicitar orçamento</span>
+            </button>
+          </div>
+
+          <div class="service-card spotlight-card glass-card">
+            <div class="service-icon"><i data-lucide="sparkles"></i></div>
+            <h3>Aniversários & Celebrações</h3>
+            <p>Arranjos florais exclusivos para festas e recepções residenciais, unindo artigos de decoração e folhagens nobres.</p>
+            <button onclick="scrollToForm('Acessórios e elementos de decoração')" class="btn btn-emerald font-mono w-100 mt-4">
+              <span>Solicitar orçamento</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACT 6: CATÁLOGO BENTO GRID -->
+    <section class="section catalog-section border-t" id="catalogo">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag font-mono">VARIEDADE BOTÂNICA</span>
+          <h2 class="section-title">Plantas em Vaso, Flores & Decoração</h2>
+          <p class="section-subtitle">Escolha uma categoria e solicite seu orçamento direto no formulário.</p>
+        </div>
+
+        <!-- Apenas as 3 Opções Solicitadas + Todas -->
+        <div class="catalog-filters font-mono reveal-item">
+          <button class="filter-btn active" data-filter="todos">Todas</button>
+          <button class="filter-btn" data-filter="flores-plantas">Flores e Plantas</button>
+          <button class="filter-btn" data-filter="projetos-personalizados">Projetos personalizados</button>
+          <button class="filter-btn" data-filter="decoracao">Acessórios e elementos de decoração</button>
+        </div>
+
+        <div class="products-grid reveal-item" id="productsGrid">
+          <!-- Rendered dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ACT 7: INSTAGRAM GALERIA (@milplantas) -->
+    <section class="section instagram-section border-t" id="instagram">
+      <div class="container">
+        <div class="section-header text-center reveal-item">
+          <span class="section-tag font-mono">
+            <svg class="official-icon text-accent" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            NOSSO INSTAGRAM
+          </span>
+          <h2 class="section-title">Acompanhe a @milplantas</h2>
+          <p class="section-subtitle">Inspiração diária com arranjos florais, novas espécies e dicas de cultivo direto da Vila Leopoldina.</p>
+        </div>
+
+        <div class="insta-grid reveal-item">
+          <a href="https://www.instagram.com/milplantas" target="_blank" class="insta-card spotlight-card glass-card">
+            <img src="imagens/mil plantas - 1.png" alt="Arranjo Exclusivo MilPlantas">
+            <div class="insta-hover-overlay">
+              <svg class="official-icon" viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span class="font-mono">Ver no Instagram</span>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/milplantas" target="_blank" class="insta-card spotlight-card glass-card">
+            <img src="imagens/mil plantas - 5.png" alt="Orquídea Vanda MilPlantas">
+            <div class="insta-hover-overlay">
+              <svg class="official-icon" viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span class="font-mono">Ver no Instagram</span>
+            </div>
+          </a>
+
+          <a href="https://www.instagram.com/milplantas" target="_blank" class="insta-card spotlight-card glass-card">
+            <img src="imagens/mil plantas - 12.png" alt="Mesa Posta e Arranjos MilPlantas">
+            <div class="insta-hover-overlay">
+              <svg class="official-icon" viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span class="font-mono">Ver no Instagram</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="text-center mt-4 reveal-item" style="margin-top: 2.5rem;">
+          <a href="https://www.instagram.com/milplantas" target="_blank" class="btn btn-outline font-mono">
+            <svg class="official-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            Seguir @milplantas no Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACT 8: LOJA FÍSICA & GEOLOCALIZAÇÃO -->
+    <section class="section location-section border-t" id="localizacao">
+      <div class="container">
+        <div class="location-card spotlight-card glass-card reveal-item">
+          <div class="location-info">
+            <span class="section-tag font-mono">VISITE A NOSSA LOJA</span>
+            <h2>MilPlantas na Vila Leopoldina</h2>
+            <p>Venha conhecer de perto nossa variedade de flores naturais, plantas e artigos de jardinagem.</p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <i data-lucide="map-pin"></i>
+                <div>
+                  <strong>Endereço Oficial</strong>
+                  <span>Rua Baumann, 1177 – Vila Leopoldina, São Paulo - SP</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i data-lucide="clock"></i>
+                <div>
+                  <strong>Horário de Funcionamento</strong>
+                  <span class="font-mono">Segunda a Sábado: 08h às 18h | Domingo: 09h às 14h</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg class="official-icon text-accent" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="margin-top: 0.2rem;">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/>
+                  <path d="M12 0C5.373 0 0 5.373 0 12c0 2.119.554 4.108 1.523 5.835L.055 23.445l5.772-1.514C7.502 22.84 9.687 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.99 0-3.856-.566-5.447-1.547l-.391-.24-3.432.9.916-3.346-.264-.42A9.957 9.957 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/>
+                </svg>
+                <div>
+                  <strong>Telefones & WhatsApp</strong>
+                  <span class="font-mono">(11) 94015-8039 | (11) 3646-6060</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="location-actions">
+              <a href="https://www.google.com/maps/place/MilPlantas/data=!4m2!3m1!1s0x0:0xb5fc442530e3da10?sa=X&ved=1t:2428&ictx=111" target="_blank" class="btn btn-emerald font-mono">
+                <i data-lucide="navigation"></i> Abrir no Google Maps
+              </a>
+              <button onclick="scrollToForm('Flores e Plantas')" class="btn btn-outline font-mono">
+                <svg class="official-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/>
+                  <path d="M12 0C5.373 0 0 5.373 0 12c0 2.119.554 4.108 1.523 5.835L.055 23.445l5.772-1.514C7.502 22.84 9.687 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.99 0-3.856-.566-5.447-1.547l-.391-.24-3.432.9.916-3.346-.264-.42A9.957 9.957 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/>
+                </svg>
+                <span>Solicitar Orçamento</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="location-map">
+            <div class="map-placeholder spotlight-card">
+              <div class="map-pin-badge font-mono">
+                <i data-lucide="map-pin"></i> MilPlantas • Vila Leopoldina SP
+              </div>
+              <img src="imagens/mil plantas - 4.png" alt="Loja MilPlantas Rua Baumann">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACT 9: CTA FINAL (Rola até o Formulário Principal) -->
+    <section class="section final-cta-section dark-act-switch">
+      <div class="container text-center reveal-item">
+        <div class="final-cta-card spotlight-card glass-card">
+          <div class="inline-badge font-mono mb-4">
+            <span class="badge-dot"></span>
+            <span>SOLICITE SEU ORÇAMENTO SOB MEDIDA</span>
+          </div>
+
+          <h2 class="hero-display-title">
+            Transforme seus ambientes com a beleza<br>
+            <span class="highlight-text">e a sofisticação da MilPlantas.</span>
+          </h2>
+
+          <p class="final-cta-desc">
+            Preencha nosso formulário principal para receber atendimento rápido de nossa equipe especializada.
+          </p>
+
+          <div class="cta-btns">
+            <button onclick="scrollToForm('Flores e Plantas')" class="btn btn-emerald btn-lg font-mono">
+              <span>Solicitar Orçamento</span>
+              <i data-lucide="arrow-up-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer border-t">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <a href="#" class="logo mb-4" style="display: inline-block;">
+          <img src="Logo Milplantas.svg" alt="MilPlantas" class="brand-logo-img">
+        </a>
+        <p class="footer-desc">Empresa brasileira com mais de 33 anos de tradição em flores naturais, plantas ornamentais, decoração, jardinagem e projetos florais para eventos na Vila Leopoldina, São Paulo.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/milplantas" target="_blank" title="Instagram @milplantas" class="social-btn instagram-btn">
+            <svg class="official-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/5511940158039" target="_blank" title="WhatsApp Oficial" class="social-btn whatsapp-btn">
+            <svg class="official-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/>
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 2.119.554 4.108 1.523 5.835L.055 23.445l5.772-1.514C7.502 22.84 9.687 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.99 0-3.856-.566-5.447-1.547l-.391-.24-3.432.9.916-3.346-.264-.42A9.957 9.957 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/>
+            </svg>
+          </a>
+          <a href="https://www.google.com/maps/place/MilPlantas/data=!4m2!3m1!1s0x0:0xb5fc442530e3da10?sa=X&ved=1t:2428&ictx=111" target="_blank" title="Google Maps MilPlantas" class="social-btn maps-btn">
+            <svg class="official-icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col font-mono">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#historia">Sobre a MilPlantas</a></li>
+          <li><a href="#eventos">Noivados & Events</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#catalogo">Coleções & Plantas</a></li>
+          <li><a href="#localizacao">Loja Vila Leopoldina</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col font-mono">
+        <h4>Especialidades</h4>
+        <ul>
+          <li><a href="#eventos">Mini Weddings & Noivados</a></li>
+          <li><a href="#eventos">Eventos Corporativos</a></li>
+          <li><a href="#catalogo">Flores de Corte Frescas</a></li>
+          <li><a href="#catalogo">Plantas Ornamentais em Vaso</a></li>
+          <li><a href="#catalogo">Artigos de Decoração</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col font-mono">
+        <h4>Endereço Sede</h4>
+        <p>Rua Baumann, 1177<br>Vila Leopoldina - SP</p>
+        <p>Seg-Sáb: 08h-18h | Dom: 09h-14h</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center font-mono">
+      <p>© 2026 MilPlantas • 33+ Anos de Tradição. Veja nossa página no <a href="https://www.google.com/maps/place/MilPlantas/data=!4m2!3m1!1s0x0:0xb5fc442530e3da10?sa=X&ved=1t:2428&ictx=111" target="_blank">Google Maps</a>.</p>
+    </div>
+  </footer>
+
+  <!-- Script Engine -->
+  <script src="script.js"></script>
+</body>
+</html>
